@@ -2,6 +2,11 @@
 <html>
   <head>
       <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <link rel="stylesheet" type="text/css" href="scripts/image-picker/image-picker.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="scripts/image-picker/image-picker.min.js"></script>
+      <script src="scripts/core.js"></script>
+     
   </head>
 <body>
 <header style="text-align: center">
@@ -12,9 +17,21 @@
   <div class="form">
     <img src="images/form-large.png" width="1120px"/>
     <form class="form-container">
-      <input type="text" name="destination" placeholder="Where are you flying from"/>
-      <input type="date" name="out_date"/>
-      <input type="date" name="in_date" />
+      <div>
+        <input type="text" name="destination" placeholder="Where are you flying from"/>
+        <input type="date" name="out_date"/>
+        <input type="date" name="in_date" />
+      </div>
+      <div class="experiences">
+        <label class="activity-label">Find your ideal experience:</label>
+        <select multiple="multiple" class="image-picker show-labels show-html">
+          <option data-img-label="Awww" data-img-src="images/activities/Asia.jpg" value="1">Asia</option>
+          <option data-img-label="Awww" data-img-src="images/activities/Football.jpg" value="2">Caves Exploration</option>
+          <option data-img-label="Awww" data-img-src="images/activities/History.jpg" value="3">History</option>
+          <option data-img-label="Awww" data-img-src="images/activities/ThemePark.jpg" value="4">Theme Park</option>
+          <option data-img-label="Awww" data-img-src="images/activities/Wine.jpg" value="5">Wine</option>
+        </select>
+      </div>
     </form>
   </div>
 </div>
