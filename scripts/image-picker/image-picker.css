@@ -25,11 +25,16 @@ ul.thumbnails.image_picker_selector {
       border: 1px solid #003f7f;
       -webkit-user-select: none;
       -moz-user-select: none;
-      -ms-user-select: none; }
+      -ms-user-select: none;
+      border: none;
+      position: relative;
+    }
       ul.thumbnails.image_picker_selector li .thumbnail img {
-        -webkit-user-drag: none; }
+        -webkit-user-drag: none; 
+      }
     ul.thumbnails.image_picker_selector li .thumbnail.selected {
-      background: #ffffff; }
+      background: #ffffff; 
+    }
 
       ul.thumbnails p
       {
@@ -37,11 +42,12 @@ ul.thumbnails.image_picker_selector {
        position:absolute;
        text-align: center;
        padding-left: 10px;
-       top:200px;
+       bottom: 3px;
        color: #ffffff;
        background:rgba(0,0,0,0.7);
        padding: 2px;
        display:block;
        width: 136px;
+       margin: 0;
       }
 

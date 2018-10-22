@@ -91,3 +91,17 @@ height: 140px;;
 .image_picker_selector {
   display: block;
 }
+
+.submit-button {
+  float: right;
+  margin-right: -125px;
+  margin-top: 5px;
+}
+
+.submit-button button {
+  padding: 15px 50px;
+  background: transparent;
+  border: none;
+  width: 210px;
+  height: 45px;
+}
