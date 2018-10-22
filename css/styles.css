@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+header, .container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #0055af;
+}
+
+.header-background {
+  height: 435px;
+  background: url(//s1.travix.com/as/asia-thailand-bangkok-tuktuk-city-traffic-large.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header img {
+  margin-top: -2px;
+}
+
+.form {
+  background-color: white;
+}
+
+.form img {
+  margin-top: -137px;
+}
