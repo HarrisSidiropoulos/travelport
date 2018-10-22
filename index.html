@@ -2,6 +2,11 @@
 <html>
   <head>
       <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <link rel="stylesheet" type="text/css" href="scripts/image-picker/image-picker.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="scripts/image-picker/image-picker.min.js"></script>
+      <script src="scripts/core.js"></script>
+     
   </head>
 <body>
 <header style="text-align: center">
@@ -12,9 +17,25 @@
   <div class="form">
     <img src="images/form-large.png" width="1120px"/>
     <form class="form-container">
-      <input type="text" name="destination" placeholder="Where are you flying from"/>
-      <input type="date" name="out_date"/>
-      <input type="date" name="in_date" />
+      <div>
+        <input type="text" name="destination" placeholder="Where are you flying from"/>
+        <input type="date" name="out_date"/>
+        <input type="date" name="in_date" />
+      </div>
+      <div class="experiences">
+        <label class="activity-label">Find your ideal experience:</label>
+        <select multiple="multiple" class="image-picker show-labels show-html">
+          <option data-img-label="Gateway to Asia" data-img-src="images/activities/Asia.jpg" value="1">Asia</option>
+          <option data-img-label="European Football" data-img-src="images/activities/Football.jpg" value="2">European Football</option>
+          <option data-img-label="Historical Places" data-img-src="images/activities/History.jpg" value="3">History</option>
+          <option data-img-label="Theme Parks" data-img-src="images/activities/ThemePark.jpg" value="4">Theme Park</option>
+          <option data-img-label="Wine Tasting" data-img-src="images/activities/Wine.jpg" value="5">Wine</option>
+          <option data-img-label="Caves Exploration" data-img-src="images/activities/caves.jpg" value="6">Caves Exploration</option>
+        </select>
+      </div>
+      <div class="submit-button">
+        <button type="submit"></button>
+      </div>
     </form>
   </div>
 </div>

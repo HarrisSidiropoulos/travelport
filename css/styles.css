@@ -10,7 +10,7 @@ header {
 
 .header-background {
   height: 435px;
-  background: url(//s1.travix.com/as/asia-thailand-bangkok-tuktuk-city-traffic-large.jpg) no-repeat;
+  background: url(../images/asia-thailand-bangkok-tuktuk-city-traffic-large.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -59,4 +59,49 @@ input[name="out_date"] {
 
 input[name="in_date"] {
   width: 170px;
+}
+
+.thumbnail img
+{
+margin-top: 0px;
+width: 140px;
+height: 140px;;
+}
+
+.thumbnail 
+{
+width: 140px;
+height: 140px;;
+}
+
+.activity-label
+{
+  margin-top: 25px;
+  color:white;
+  font-family: Roboto,sans-serif;
+  font-size: 15px;
+  display: block;
+}
+
+.experiences
+{
+  margin-top: 0px;
+  display: block;
+}
+.image_picker_selector {
+  display: block;
+}
+
+.submit-button {
+  float: right;
+  margin-right: -125px;
+  margin-top: 5px;
+}
+
+.submit-button button {
+  padding: 15px 50px;
+  background: transparent;
+  border: none;
+  width: 210px;
+  height: 45px;
 }
