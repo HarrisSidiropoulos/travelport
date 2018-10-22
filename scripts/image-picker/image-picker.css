@@ -4,7 +4,7 @@ ul.thumbnails.image_picker_selector {
   list-style-position: outside;
   list-style-type: none;
   padding: 0px;
-  margin-top: 20px; 
+  margin-top: 10px; 
 }  
   ul.thumbnails.image_picker_selector ul {
     overflow: auto;
@@ -36,7 +36,12 @@ ul.thumbnails.image_picker_selector {
        float: left;
        position:absolute;
        text-align: center;
-       margin-left: auto;
-       top:190px;
+       padding-left: 10px;
+       top:200px;
+       color: #ffffff;
+       background:rgba(0,0,0,0.7);
+       padding: 2px;
+       display:block;
+       width: 136px;
       }
 
