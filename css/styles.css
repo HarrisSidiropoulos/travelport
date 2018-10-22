@@ -2,9 +2,8 @@ body {
   margin: 0;
 }
 
-header, .container {
+header {
   width: 100%;
-  margin: 0 auto;
   text-align: center;
   background-color: #0055af;
 }
@@ -22,8 +21,42 @@ header img {
 
 .form {
   background-color: white;
+  position: relative;
 }
 
 .form img {
   margin-top: -137px;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.form-container {
+  position: absolute;
+  top: -10px;
+  left: 28px;
+}
+
+.form-container input {
+  height: 40px;
+  border-radius: 5px;
+  border-color: transparent;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+
+input[name="destination"] {
+  width: 390px;
+}
+
+input[name="out_date"] {
+  width: 180px;
+  margin-right: 10px;
+}
+
+input[name="in_date"] {
+  width: 170px;
 }
