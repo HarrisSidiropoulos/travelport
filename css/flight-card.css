@@ -8,7 +8,7 @@
 .flight-card {
   display: flex;
   flex: 0 0 100%;
-  
+  margin-bottom: 10px;
 }
 
 .flight-card__airline {
@@ -371,6 +371,47 @@
   flex: 1 1 auto;
   padding-left: 19px;
   width: 40%;
+}
+
+.flight-info__segments {
+  text-align: center;
+  position: relative;
+  height: 16px;
+  min-width: 76px;
+}
+
+.flight-info__segments:before {
+  content: '';
+  height: 2px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -1px;
+  position: absolute;
+  background: #005fbb;
+}
+
+.stops-circle {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  display: inline-block;
+  top: -1px;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.stops-circle:after {
+  content: '';
+  position: absolute;
+  border: 2px solid #005fbb;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  top: 3px;
+  left: 3px;
 }
 
 .flight-info__travel-time {
