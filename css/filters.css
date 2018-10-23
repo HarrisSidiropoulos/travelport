@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Icomoon-Regular";
+  src: url("https://www.cheaptickets.nl/assets/fonts/Icomoon-Regular/Icomoon-Regular.eot?v29");
+  src: url("https://www.cheaptickets.nl/assets/fonts/Icomoon-Regular/Icomoon-Regular.eot?v29#iefix") format('embedded-opentype'),
+    url("https://www.cheaptickets.nl/assets/fonts/Icomoon-Regular/Icomoon-Regular.woff?v29") format('woff'),
+    url("https://www.cheaptickets.nl/assets/fonts/Icomoon-Regular/Icomoon-Regular.woff2?v29") format('woff2'),
+    url("https://www.cheaptickets.nl/assets/fonts/Icomoon-Regular/Icomoon-Regular.ttf?v29") format('truetype'),
+    url("https://www.cheaptickets.nl/assets/fonts/Icomoon-Regular/Icomoon-Regular.svg?v29") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.checkout-common__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+}
+
+.vertical-filter {
+  background-color: #ebf5fd;
+  border-radius: 8px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 270px;
+  -ms-flex: 0 0 270px;
+  flex: 0 0 270px;
+  height: 100%;
+  margin-bottom: 24px;
+}
+
+.vertical-filter__header {
+  border-bottom: 2px solid var(--tx-generic-color-secondary);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 85px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.vertical-filter__header .vertical-filter__title {
+  font-family: Khand,sans-serif;
+  font-weight: 500;
+  color: #0056A9;
+  font-size: 22px;
+  line-height: 1;
+  position: relative;
+  padding-left: 46px;
+}
+
+.vertical-filter__header .vertical-filter__title:before {
+  font-size: 20px;
+  left: 18px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-SRP_Filter:before, .vertical-filter__header .vertical-filter__title:before {
+  font-family: "Icomoon-Regular";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  speak: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  content: "\e954 ";
+}
+
+.vertical-filter__header .vertical-filter__info {
+  font-family: Roboto,sans-serif;
+  font-weight: 400;
+  color: var(--tx-generic-color-text-darker);
+  font-size: 13px;
+  line-height: 1;
+  margin-top: 8px;
+  padding-left: 46px;
+}
+
+.collapse__label {
+  margin-bottom: 20px;
+  font-family: Roboto,sans-serif;
+  font-weight: 500;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #0056a9;
+  font-size: 16px;
+  height: auto;
+  line-height: 1;
+  padding: 0;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-property: margin-bottom;
+  transition-property: margin-bottom;
+  -webkit-transition-timing-function: cubic-bezier(.445,.05,.55,.95);
+  transition-timing-function: cubic-bezier(.445,.05,.55,.95);
+}
+
+.vertical-filter .collapse {
+  border-bottom: 2px solid var(--tx-generic-color-secondary);
+  border-top: none;
+  margin: 0;
+  padding: 21px 16px 24px;
+}
+
+.filter {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.filter__item {
+  min-height: 34px;
+  padding: 0;
+}
+
+.collapse {
+  font-family: Khand,sans-serif;
+  font-weight: 400;
+  border-top: 2px dashed #d5e8f8;
+  margin: 0 12px;
+}
+
+.filter__item__label {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin: 0;
+  /* padding-left: 32px; */
+  padding-left: 5px;
+  position: relative;
+}
+
+/* .filter__item__label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #d5e8f8;
+  background-color: #fff;
+} */
+
+.filter input {
+  /* display: none; */
+}
+
+.filter__item__caption {
+  font-size: 13px;
+  color: #597385;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-right: 0;
+  align-items: flex-start;
+  font-family: Roboto,sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.filter__item__price {
+  font-size: 13px;
+  font-family: Roboto,sans-serif;
+  color: #597385;
+  float: right;
+  display: inline-block;
+}
+
+.filter__item__more--link {
+  font-family: Roboto,sans-serif;
+  font-weight: 700;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: solid 2px #d5e8f8;
+  color: #0056a9;
+  font-size: 12px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 20px;
+  margin: 10px auto 0;
+  padding: 0;
+  width: 162px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+}

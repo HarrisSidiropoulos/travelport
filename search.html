@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/flight-card.css">
+  <link rel="stylesheet" type="text/css" href="css/filters.css">
   <link href="https://fonts.googleapis.com/css?family=Khand:300,400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 </head>
@@ -18,99 +19,49 @@
     </div>
   </div>
   <div class="container">
-    <div class="flight-results">
-      <div class="flight-card">
-        <div class="flight-card__airline">
-          <img alt="Lufthansa" class="airline-logo__image" src="//s1.travix.com/global/assets/airlineLogos/LH.png"
-            srcset="//s1.travix.com/global/assets/airlineLogos/LH@2x.png 2x">
-        </div>
-        <div class="flight-card__info">
-          <div class="flight-info first">
-            <div class="flight-info__baggage">
-              <div class="flight-info__baggage__info-container"><span class="flight-info__baggage__info-container__text">Lufthansa
-                  -01 nov. 2018</span></div>
-            </div>
-            <div class="flight-info__flight clearfix">
-              <div class="flight-info__departure">
-                <div class="flight-info__airport" title="Vertrekluchthaven">
-                  <div class="flight-info__iata">AMS</div>
-                  <div class="flight-info__name">Schiphol</div>
-                  <div class="flight-info__city">Amsterdam</div>
-                </div>
-              </div>
-              <div class="flight-info__travel">
-                <div class="flight-info__flight-type" title="Vlucht met tussenstop(s)">1 stop</div>
-                <div class="flight-info__departure-time" title="Vertrektijd op vertrekluchthaven">11:00</div>
-                <div class="flight-info__segment" title="Tussenstop in Frankfurt">
-                  <div class="flight-info__segments"><span class="stops-circle"></span></div>
-                  <div class="flight-info__travel-time" title="Vluchtduur incl. tussenstops">12u35m</div>
-                </div>
-                <div class="flight-info__arrival-time" title="Aankomsttijd op bestemming">
-                  <div class="flight-info__arrival-time">00:35</div>
-                </div>
-              </div>
-              <div class="flight-info__arrival">
-                <div class="flight-info__airport" title="Aankomstluchthaven">
-                  <div class="flight-info__iata">ATH</div>
-                  <div class="flight-info__name">Eleftherios Venizelos </div>
-                  <div class="flight-info__city">Athene</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ui-badge">
-            <div class="flight-info ">
-              <div class="flight-info__baggage">
-                <div class="flight-info__baggage__info-container"><span class="flight-info__baggage__info-container__text">Austrian
-                    Airlines -07 nov. 2018</span></div>
-              </div>
-              <div class="flight-info__flight clearfix">
-                <div class="flight-info__departure">
-                  <div class="flight-info__airport" title="Vertrekluchthaven">
-                    <div class="flight-info__iata">ATH</div>
-                    <div class="flight-info__name">Eleftherios Venizelos </div>
-                    <div class="flight-info__city">Athene</div>
-                  </div>
-                </div>
-                <div class="flight-info__travel">
-                  <div class="flight-info__flight-type" title="Vlucht met tussenstop(s)">1 stop</div>
-                  <div class="flight-info__departure-time" title="Vertrektijd op vertrekluchthaven">14:55</div>
-                  <div class="flight-info__segment" title="Tussenstop in Wenen">
-                    <div class="flight-info__segments"><span class="stops-circle"></span></div>
-                    <div class="flight-info__travel-time" title="Vluchtduur incl. tussenstops">08u15m</div>
-                  </div>
-                  <div class="flight-info__arrival-time" title="Aankomsttijd op bestemming">
-                    <div class="flight-info__arrival-time">22:10</div>
-                  </div>
-                </div>
-                <div class="flight-info__arrival">
-                  <div class="flight-info__airport" title="Aankomstluchthaven">
-                    <div class="flight-info__iata">AMS</div>
-                    <div class="flight-info__name">Schiphol</div>
-                    <div class="flight-info__city">Amsterdam</div>
-                  </div>
-                </div>
-              </div>              
-            </div>
+    <div class="checkout-common__container">
+      <div class="vertical-filter">
+        <div class="vertical-filter__header">
+          <div class="vertical-filter__title">Filter je resultaten</div>
+          <div class="vertical-filter__info">
+            <div><span>0 filter(s) actief </span></div>
           </div>
         </div>
-        <div class="flight-card__fares">
-          <div class="flight-card__price-wrapper">
-            <div class="price">
-              <div class="price__main"><span class="currency currency--position_left">€ </span><span class="price__value value">203</span><sup>,34</sup><span
-                  class="price__asterisk">*</span></div>
-              <div class="flight-card__per-person">per persoon</div>
-            </div>
-            <div class="flight-card__submit--wrapper">
-              <div class="flight-card__submit" data-gtm-id="SRP_flight_card_book_now"><a class="submit-button"
-                  data-gtm-id="SRP_flight_card_book_now"><span data-gtm-id="SRP_flight_card_book_now">Boek vlucht</span><span
-                    class="icon icon-Buttons_ArrowFull_big" data-gtm-id="SRP_flight_card_book_now"></span></a></div>
-              <div class="flight-card__fares-region"></div>
+        <div class="collapse active gtm-icon-filter-airlines filter__collapse--dashed-top">
+          <div class="collapse__label">
+            <div>Alle airlines</div><span class="icon icon-Buttons_dropup"></span>
+          </div>
+          <div class="collapse__panel">
+            <div class="collapse__info">
+              <form>
+                <ul class="filter">
+                  <li class="filter__item airlinesFilter_airlines_cow"><input class="" data-item-key="0" id="airlinesFilter_airlines_cow"
+                      type="checkbox"><label class="filter__item__label" for="airlinesFilter_airlines_cow"><span class="filter__item__caption"><span>Dezelfde
+                          airline heen en terug</span></span></label></li>
+                  <li class="filter__item airlinesFilter_LH"><input class="" data-item-key="1" id="airlinesFilter_LH"
+                      type="checkbox"><label class="filter__item__label" for="airlinesFilter_LH"><span class="filter__item__caption"><span>Lufthansa</span></span></label></li>
+                  <li class="filter__item airlinesFilter_TK"><input class="" data-item-key="2" id="airlinesFilter_TK"
+                      type="checkbox"><label class="filter__item__label" for="airlinesFilter_TK"><span class="filter__item__caption"><span>Turkish
+                          Airlines</span></span></label></li>
+                  <li class="filter__item airlinesFilter_KL"><input class="gtm-filter-item-has-discount" data-item-key="3"
+                      id="airlinesFilter_KL" type="checkbox"><label class="filter__item__label" for="airlinesFilter_KL"><span
+                        class="filter__item__caption"><span>KLM</span><span
+                          class="filter__caption__label">Actie</span></span></label></li>
+                  <li class="filter__item airlinesFilter_OS"><input class="" data-item-key="4" id="airlinesFilter_OS"
+                      type="checkbox"><label class="filter__item__label" for="airlinesFilter_OS"><span class="filter__item__caption"><span>Austrian
+                          Airlines</span></span></label></li>
+                  <li>
+                    <button type="submit" class="filter__item__more filter__item__more--link gtm-filter-show-more-airlines"><span title="Toon meer airlines">Toon
+                        meer airlines</span></button>
+                  </li>
+                </ul>
+              </form>
             </div>
           </div>
         </div>
       </div>
-      <div class="flight-card">
+      <div class="flight-results">
+        <div class="flight-card">
           <div class="flight-card__airline">
             <img alt="Lufthansa" class="airline-logo__image" src="//s1.travix.com/global/assets/airlineLogos/LH.png"
               srcset="//s1.travix.com/global/assets/airlineLogos/LH@2x.png 2x">
@@ -181,7 +132,7 @@
                       <div class="flight-info__city">Amsterdam</div>
                     </div>
                   </div>
-                </div>              
+                </div>
               </div>
             </div>
           </div>
@@ -201,6 +152,98 @@
             </div>
           </div>
         </div>
+        <div class="flight-card">
+          <div class="flight-card__airline">
+            <img alt="Lufthansa" class="airline-logo__image" src="//s1.travix.com/global/assets/airlineLogos/LH.png"
+              srcset="//s1.travix.com/global/assets/airlineLogos/LH@2x.png 2x">
+          </div>
+          <div class="flight-card__info">
+            <div class="flight-info first">
+              <div class="flight-info__baggage">
+                <div class="flight-info__baggage__info-container"><span class="flight-info__baggage__info-container__text">Lufthansa
+                    -01 nov. 2018</span></div>
+              </div>
+              <div class="flight-info__flight clearfix">
+                <div class="flight-info__departure">
+                  <div class="flight-info__airport" title="Vertrekluchthaven">
+                    <div class="flight-info__iata">AMS</div>
+                    <div class="flight-info__name">Schiphol</div>
+                    <div class="flight-info__city">Amsterdam</div>
+                  </div>
+                </div>
+                <div class="flight-info__travel">
+                  <div class="flight-info__flight-type" title="Vlucht met tussenstop(s)">1 stop</div>
+                  <div class="flight-info__departure-time" title="Vertrektijd op vertrekluchthaven">11:00</div>
+                  <div class="flight-info__segment" title="Tussenstop in Frankfurt">
+                    <div class="flight-info__segments"><span class="stops-circle"></span></div>
+                    <div class="flight-info__travel-time" title="Vluchtduur incl. tussenstops">12u35m</div>
+                  </div>
+                  <div class="flight-info__arrival-time" title="Aankomsttijd op bestemming">
+                    <div class="flight-info__arrival-time">00:35</div>
+                  </div>
+                </div>
+                <div class="flight-info__arrival">
+                  <div class="flight-info__airport" title="Aankomstluchthaven">
+                    <div class="flight-info__iata">ATH</div>
+                    <div class="flight-info__name">Eleftherios Venizelos </div>
+                    <div class="flight-info__city">Athene</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-badge">
+              <div class="flight-info ">
+                <div class="flight-info__baggage">
+                  <div class="flight-info__baggage__info-container"><span class="flight-info__baggage__info-container__text">Austrian
+                      Airlines -07 nov. 2018</span></div>
+                </div>
+                <div class="flight-info__flight clearfix">
+                  <div class="flight-info__departure">
+                    <div class="flight-info__airport" title="Vertrekluchthaven">
+                      <div class="flight-info__iata">ATH</div>
+                      <div class="flight-info__name">Eleftherios Venizelos </div>
+                      <div class="flight-info__city">Athene</div>
+                    </div>
+                  </div>
+                  <div class="flight-info__travel">
+                    <div class="flight-info__flight-type" title="Vlucht met tussenstop(s)">1 stop</div>
+                    <div class="flight-info__departure-time" title="Vertrektijd op vertrekluchthaven">14:55</div>
+                    <div class="flight-info__segment" title="Tussenstop in Wenen">
+                      <div class="flight-info__segments"><span class="stops-circle"></span></div>
+                      <div class="flight-info__travel-time" title="Vluchtduur incl. tussenstops">08u15m</div>
+                    </div>
+                    <div class="flight-info__arrival-time" title="Aankomsttijd op bestemming">
+                      <div class="flight-info__arrival-time">22:10</div>
+                    </div>
+                  </div>
+                  <div class="flight-info__arrival">
+                    <div class="flight-info__airport" title="Aankomstluchthaven">
+                      <div class="flight-info__iata">AMS</div>
+                      <div class="flight-info__name">Schiphol</div>
+                      <div class="flight-info__city">Amsterdam</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flight-card__fares">
+            <div class="flight-card__price-wrapper">
+              <div class="price">
+                <div class="price__main"><span class="currency currency--position_left">€ </span><span class="price__value value">203</span><sup>,34</sup><span
+                    class="price__asterisk">*</span></div>
+                <div class="flight-card__per-person">per persoon</div>
+              </div>
+              <div class="flight-card__submit--wrapper">
+                <div class="flight-card__submit" data-gtm-id="SRP_flight_card_book_now"><a class="submit-button"
+                    data-gtm-id="SRP_flight_card_book_now"><span data-gtm-id="SRP_flight_card_book_now">Boek vlucht</span><span
+                      class="icon icon-Buttons_ArrowFull_big" data-gtm-id="SRP_flight_card_book_now"></span></a></div>
+                <div class="flight-card__fares-region"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>

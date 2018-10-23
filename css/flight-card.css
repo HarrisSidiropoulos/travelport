@@ -1,14 +1,12 @@
 .search {
   background-color: #daeaf9;
 }
-.flight-results {
-  padding: 20px 0;
-}
 
 .flight-card {
   display: flex;
   flex: 0 0 100%;
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .flight-card__airline {
