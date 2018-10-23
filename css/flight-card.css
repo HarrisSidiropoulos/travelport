@@ -368,3 +368,46 @@
   padding-left: 19px;
   width: 40%;
 }
+
+.price__value {
+  font-size: 26px;
+  line-height: 26px;
+  font-family: Khand,sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  white-space: nowrap;
+  color: #004b94;
+  text-align: center;
+}
+
+.currency {
+  font-size: 15px;
+  line-height: 15px;
+  font-family: Khand,sans-serif;
+  font-weight: 500;
+  color: #004b94;
+  font-size: 19px;
+  line-height: 23px;
+  position: relative;
+  text-align: center;
+}
+
+.flight-card__per-person {
+  font-size: 12px;
+  margin-top: 0;
+  color: #597385;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.price__main {
+  border-bottom: 6px solid #f6e41f;
+  text-align: center;
+  font-family: Khand,sans-serif;
+  font-weight: 500;
+  color: #004b94;
+  font-size: 19px;
+  line-height: 23px;
+  position: relative;
+  text-align: center;
+}
