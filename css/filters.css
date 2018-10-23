@@ -15,7 +15,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 0;
+  padding: 0;
 }
 
 .vertical-filter {
@@ -201,4 +201,22 @@
   cursor: pointer;
   text-align: center;
   display: flex;
+}
+
+.flight-results__count {
+  font-family: Khand,sans-serif;
+  font-weight: 500;
+  color: #0056a9;
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 22px;
+  height: 32px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin: 8px 0;
 }
